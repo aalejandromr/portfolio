@@ -7,6 +7,7 @@ import Banner from "./BannerComponent";
 import "./styles.css";
 import ProjectsContainer from "./ProjectsComponent";
 import Testimonials from "./Testimonials";
+import Footer from "./FooterComponent";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       />
       <DivDivider />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
