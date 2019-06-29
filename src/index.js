@@ -10,11 +10,21 @@ import ProjectsContainer from "./ProjectsComponent";
 function App() {
   return (
     <div className="App">
-      <Banner />
+      <Banner
+        header="Full Stack Developer - Native Spanish Speaker"
+        button
+        paragraph="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+        lorem ipsum lorem ipsum lorem ipsum"
+        reversed
+      />
       <DivDivider />
       <ProjectsContainer />
       <DivDivider />
-      <Banner />
+      <Banner
+        header="Lambda Experience"
+        paragraph="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+        lorem ipsum lorem ipsum lorem ipsum"
+      />
     </div>
   );
 }

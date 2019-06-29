@@ -4,14 +4,11 @@ import { Header, Button } from "semantic-ui-react";
 const Intro = props => {
   return (
     <>
-      <Header as="h1"> Full Stack Developer - Native Spanish Speaker </Header>
+      <Header as="h1"> {props.header} </Header>
 
-      <p>
-        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-        lorem ipsum lorem ipsum lorem ipsum
-      </p>
+      <p>{props.paragraph}</p>
 
-      <Button basic> Get to know me more </Button>
+      {props.button && <Button basic> Get to know me more </Button>}
     </>
   );
 };

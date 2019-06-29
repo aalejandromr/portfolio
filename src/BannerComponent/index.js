@@ -2,10 +2,11 @@ import React from "react";
 import { Grid, Segment } from "semantic-ui-react";
 import Intro from "./IntroComponent";
 import Me from "./MeComponent";
+import styled from "styled-components";
 
 const Banner = props => {
   return (
-    <Grid reversed="computer">
+    <StyledGrid reversed={`${props.reversed ? "computer" : false}`}>
       <Grid.Row>
         <Grid.Column largeScreen={8} mobile={16} tablet={8}>
           <Me />
@@ -17,11 +18,19 @@ const Banner = props => {
           verticalAlign="middle"
           textAlign="center"
         >
-          <Intro />
+          <Intro
+            header={props.header}
+            button={props.button}
+            paragraph={props.paragraph}
+          />
         </Grid.Column>
       </Grid.Row>
-    </Grid>
+    </StyledGrid>
   );
 };
+
+const StyledGrid = styled(Grid)`
+  background: ${props => props.reversed !== "computer" && "#e1e9ee"};
+`;
 
 export default Banner;
