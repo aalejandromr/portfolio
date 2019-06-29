@@ -6,6 +6,7 @@ import styled from "styled-components";
 import Banner from "./BannerComponent";
 import "./styles.css";
 import ProjectsContainer from "./ProjectsComponent";
+import Testimonials from "./Testimonials";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         paragraph="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
         lorem ipsum lorem ipsum lorem ipsum"
       />
+      <DivDivider />
+      <Testimonials />
     </div>
   );
 }
