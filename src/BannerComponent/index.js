@@ -6,7 +6,10 @@ import styled from "styled-components";
 
 const Banner = props => {
   return (
-    <StyledGrid reversed={`${props.reversed ? "computer" : false}`}>
+    <StyledGrid
+      reversed={`${props.reversed ? "computer" : false}`}
+      verticalAlign={"middle"}
+    >
       <Grid.Row>
         <Grid.Column largeScreen={8} mobile={16} tablet={8}>
           <Me />
@@ -31,6 +34,10 @@ const Banner = props => {
 
 const StyledGrid = styled(Grid)`
   background: ${props => props.reversed !== "computer" && "#e1e9ee"};
+  height: 100vh;
+  &&& {
+    padding: 0% 5%;
+  }
 `;
 
 export default Banner;

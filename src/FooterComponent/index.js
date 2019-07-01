@@ -22,5 +22,7 @@ const StyledFooter = styled(Grid)`
     }
     background: #181c1e;
     padding: 5% 5% 5% 5%;
+    height: 100vh;
+    width: 100%;
   }
 `;

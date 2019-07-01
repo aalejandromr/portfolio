@@ -19,17 +19,17 @@ function App() {
         lorem ipsum lorem ipsum lorem ipsum"
         reversed
       />
-      <DivDivider />
-      <ProjectsContainer />
-      <DivDivider />
-      <Banner
+      {/* <DivDivider /> */}
+      {/* <ProjectsContainer /> */}
+      {/* <DivDivider /> */}
+      {/* <Banner
         header="Lambda Experience"
         paragraph="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
         lorem ipsum lorem ipsum lorem ipsum"
-      />
-      <DivDivider />
-      <Testimonials />
-      <Footer />
+      /> */}
+      {/* <DivDivider /> */}
+      {/* <Testimonials /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

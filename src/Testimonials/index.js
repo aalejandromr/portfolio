@@ -6,7 +6,7 @@ import styled from "styled-components";
 class Testimonials extends React.Component {
   render() {
     return (
-      <>
+      <DivContainer>
         <Header as="h2"> Testimonials </Header>
         <Grid columns={3} stackable divided>
           <Grid.Row>
@@ -50,10 +50,19 @@ class Testimonials extends React.Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </>
+      </DivContainer>
     );
   }
 }
+
+const DivContainer = styled.div`
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0% 5%;
+`;
 
 const StyledHeaderH3 = styled(Header)`
   margin-bottom: 0;
