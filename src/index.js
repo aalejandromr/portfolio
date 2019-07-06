@@ -75,6 +75,7 @@ const App = props => {
     <div className="row" style={{ width: "100%" }}>
       <div className="col-12">
         {/* <Menu /> */}
+        <Nav />
         <Route path="/" component={AnimatedRoutes} />
       </div>
     </div>
