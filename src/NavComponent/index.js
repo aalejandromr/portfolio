@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const StyledNav = styled.nav`
-  background-color: rgb(32, 32, 32);
+  background-color: #2f232f;
   line-height: 5rem;
   height: 5rem;
   /* margin-top: -2rem;

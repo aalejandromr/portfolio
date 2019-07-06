@@ -32,10 +32,9 @@ const AnimatedRoutes = props => {
             path="/"
             render={props => (
               <Banner
-                header="Full Stack Developer - Native Spanish Speaker"
+                header="Full Stack Developer - Spanish Speaker"
                 button
-                paragraph="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-      lorem ipsum lorem ipsum lorem ipsum"
+                paragraph="Hey! Welcome to my website, Glad to see you here. I'm Alejandro with 2 years of experience creating amazing web tools which lowered internal department budgets and have helped make people's lifes easier."
                 reversed
                 {...props}
               />

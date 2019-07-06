@@ -11,7 +11,7 @@ const Banner = props => {
       reversed={`${props.reversed ? "computer" : false}`}
       verticalAlign={"middle"}
     >
-      <Grid.Row>
+      <TorogozBackground>
         <Grid.Column largeScreen={8} mobile={16} tablet={8}>
           <Me visible={props.visible} />
         </Grid.Column>
@@ -29,18 +29,27 @@ const Banner = props => {
             {...props}
           />
         </Grid.Column>
-      </Grid.Row>
+      </TorogozBackground>
     </StyledGrid>
   );
 };
 
 const StyledGrid = styled(Grid)`
   position: absolute;
-  background: ${props => props.reversed !== "computer" && "#e1e9ee"};
+
+  background-color: ${props =>
+    props.reversed !== "computer" ? "#e1e9ee" : "#CD776A"};
   height: 100vh;
   &&& {
     padding: 0% 5%;
   }
+`;
+
+const TorogozBackground = styled(Grid.Row)`
+  background-image: url("torogoz.png");
+  background-repeat: no-repeat;
+  background-position: 0% 110%;
+  background-size: 124px;
 `;
 
 export default Banner;
