@@ -5,21 +5,26 @@ import styled from "styled-components";
 const Nav = props => {
   return (
     <Container>
-      <div style={{ transform: "translateY(0%)" }}>
+      <Wrapper>
         <StyledNav>
           <StyledAnchor to="/">←</StyledAnchor>
           <StyledAnchor to="/projects">Projects</StyledAnchor>
           <StyledAnchor to="/education">Education</StyledAnchor>
           <StyledAnchor to="/working-with-me">Testimonials</StyledAnchor>
         </StyledNav>
-      </div>
+      </Wrapper>
     </Container>
   );
 };
 
 const Container = styled.div`
-  position: relative;
   width: 100%;
+  z-index: 100;
+`;
+
+const Wrapper = styled.div`
+  transform: translateY(0%);
+  z-index: 100;
 `;
 
 const StyledNav = styled.nav`
