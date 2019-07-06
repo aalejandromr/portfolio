@@ -41,11 +41,16 @@ const StyledGrid = styled(Grid)`
     props.reversed !== "computer" ? "#e1e9ee" : "#CD776A"};
   height: 100vh;
   &&& {
-    padding: 0% 5%;
+    padding: 5%;
   }
 `;
 
 const TorogozBackground = styled(Grid.Row)`
+  @media (min-width: 200px) and (max-width: 700px) {
+    /* margin-bottom: 10%;
+    background-position: 0% 120%;
+    z-index: 100; */
+  }
   background-image: url("torogoz.png");
   background-repeat: no-repeat;
   background-position: 0% 110%;

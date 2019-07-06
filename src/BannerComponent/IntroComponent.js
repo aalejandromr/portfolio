@@ -36,6 +36,7 @@ const StyledDiv = styled.div`
   /* background-image: url("./torogoz.png"); */
   @media (min-width: 200px) and (max-width: 700px) {
     padding: 10%;
+    margin-bottom: 35%;
     box-sizing: border-box;
   }
 `;
