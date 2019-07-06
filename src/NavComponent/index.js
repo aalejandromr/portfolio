@@ -31,6 +31,7 @@ const StyledNav = styled.nav`
   background-color: #2f232f;
   line-height: 5rem;
   height: 5rem;
+  overflow: scroll;
   /* margin-top: -2rem;
   padding-top: 2rem; */
   display: flex;

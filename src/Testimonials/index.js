@@ -61,7 +61,8 @@ const DivContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0% 5%;
+  box-sizing: border-box;
+  margin: 5%;
 `;
 
 const StyledHeaderH3 = styled(Header)`
