@@ -19,7 +19,7 @@ const Project = props => {
         centered
       />
       <Header as="h2"> Project Name </Header>{" "}
-      <Link> Lambda School Project </Link>
+      <Link to="/"> Lambda School Project </Link>
     </StyledGridColumn>
   );
 };

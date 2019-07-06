@@ -3,6 +3,7 @@ import { Grid, Segment } from "semantic-ui-react";
 import Intro from "./IntroComponent";
 import Me from "./MeComponent";
 import styled from "styled-components";
+import { Transition } from "react-transition-group";
 
 const Banner = props => {
   return (
@@ -12,7 +13,7 @@ const Banner = props => {
     >
       <Grid.Row>
         <Grid.Column largeScreen={8} mobile={16} tablet={8}>
-          <Me />
+          <Me visible={props.visible} />
         </Grid.Column>
         <Grid.Column
           largeScreen={8}
@@ -25,6 +26,7 @@ const Banner = props => {
             header={props.header}
             button={props.button}
             paragraph={props.paragraph}
+            {...props}
           />
         </Grid.Column>
       </Grid.Row>
@@ -33,6 +35,7 @@ const Banner = props => {
 };
 
 const StyledGrid = styled(Grid)`
+  position: absolute;
   background: ${props => props.reversed !== "computer" && "#e1e9ee"};
   height: 100vh;
   &&& {

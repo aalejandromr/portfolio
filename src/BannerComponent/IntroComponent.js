@@ -9,7 +9,19 @@ const Intro = props => {
 
       <p>{props.paragraph}</p>
 
-      {props.button && <Button basic> Get to know me more </Button>}
+      {props.button && (
+        <Button
+          basic
+          onClick={() => {
+            props.history.push({
+              pathname: "/projects",
+              state: { transition: "fade", duration: 300 }
+            });
+          }}
+        >
+          Get to know me more
+        </Button>
+      )}
     </StyledDiv>
   );
 };

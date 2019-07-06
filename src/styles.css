@@ -10,6 +10,7 @@ body,
   display: flex;
   align-items: center;
   height: auto;
+  flex-direction: column;
 }
 
 .App {
@@ -20,3 +21,58 @@ body,
   width: 100%;
   height: auto;
 }
+
+/** Transition Group **/
+
+.fadeTranslate-enter,
+.fadeTranslate-enter-active {
+  /* transform: translateX(0%); */
+  /* transition: all 4s ease-in-out; */
+  animation: slide-in 1.5s ease-out;
+  -webkit-animation: slide-in 1.5s ease-out;
+}
+
+.fadeTranslate-exit.fadeTranslate-exit-active {
+  /* transition: all 4s ease-in-out; */
+  animation: slide-out 1.5s ease-out;
+  -webkit-animation: slide-out 1.5s ease-out;
+}
+
+@keyframes slide-in {
+  0% {
+    padding: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    padding: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* .background-enter {
+  transform: translate(100%);
+}
+
+.background-enter.background-enter-active {
+  transform: translate(0%);
+  transition: transform 1000ms ease-in-out;
+}
+
+.background-leave {
+  transform: translate(0%);
+}
+
+.background-leave.background-leave-active {
+  transform: translate(-100%);
+  transition: transform 1000ms ease-in-out;
+} */
