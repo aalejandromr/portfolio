@@ -39,6 +39,10 @@ const StyledDiv = styled.div`
     margin-bottom: 35%;
     box-sizing: border-box;
   }
+
+  @media (min-width: 701px) and (max-width: 1100px) {
+    padding-top: 5%;
+  }
 `;
 
 export default Intro;

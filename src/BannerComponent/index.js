@@ -42,14 +42,20 @@ const StyledGrid = styled(Grid)`
   height: 100vh;
   &&& {
     padding: 5%;
+    @media (min-width: 200px) and (max-width: 1100px) {
+      height: auto;
+    }
   }
 `;
 
 const TorogozBackground = styled(Grid.Row)`
-  @media (min-width: 200px) and (max-width: 700px) {
+  @media (min-width: 600px) and (max-width: 1100px) {
     /* margin-bottom: 10%;
     background-position: 0% 120%;
     z-index: 100; */
+    &&& {
+      padding-bottom: 15%;
+    }
   }
   background-image: url("torogoz.png");
   background-repeat: no-repeat;
