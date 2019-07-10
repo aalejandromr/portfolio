@@ -62,7 +62,10 @@ const DivContainer = styled.div`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  margin: 5%;
+  margin: 0% 5%;
+  @media (min-width: 200px) and (max-width: 1100px) {
+    height: auto;
+  }
 `;
 
 const StyledHeaderH3 = styled(Header)`
