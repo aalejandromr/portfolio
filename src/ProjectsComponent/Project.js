@@ -12,7 +12,10 @@ const Project = ({ projectName, projectUrl, imgPath }) => {
       textAlign="center"
       verticalAlign="middle"
     >
-      <StyledImage src={`${imgPath}`} rounded size={"medium"} centered />
+      <Image.Group size={"big"}>
+        <StyledImage src={`${imgPath}`} rounded centered fluid />
+      </Image.Group>
+
       <Header as="h2"> {projectName} </Header>
       <a href={projectUrl}> Lambda School Project </a>
     </StyledGridColumn>
@@ -21,7 +24,9 @@ const Project = ({ projectName, projectUrl, imgPath }) => {
 
 const StyledImage = styled(Image)`
   &&& {
-    min-height: 250px;
+    /* min-height: 250px; */
+    height: auto;
+    width: auto;
   }
 `;
 
@@ -29,6 +34,7 @@ const StyledGridColumn = styled(Grid.Column)`
   & {
     padding: 5%;
     box-sizing: border-box;
+    background-color: #4682b4;
   }
 `;
 
