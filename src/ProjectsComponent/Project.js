@@ -3,23 +3,18 @@ import { Image, Grid, Header } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Project = props => {
+const Project = ({ projectName, projectUrl, imgPath }) => {
   return (
     <StyledGridColumn
       mobile={16}
       tablet={8}
-      largeScreen={4}
+      largeScreen={8}
       textAlign="center"
       verticalAlign="middle"
     >
-      <StyledImage
-        src="https://picsum.photos/id/0/5616/3744"
-        rounded
-        size={"medium"}
-        centered
-      />
-      <Header as="h2"> Project Name </Header>{" "}
-      <Link to="/"> Lambda School Project </Link>
+      <StyledImage src={`${imgPath}`} rounded size={"medium"} centered />
+      <Header as="h2"> {projectName} </Header>
+      <a href={projectUrl}> Lambda School Project </a>
     </StyledGridColumn>
   );
 };
