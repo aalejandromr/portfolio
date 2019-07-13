@@ -52,6 +52,7 @@ const ProjectsContainer = props => {
 
 const StyledGrid = styled(Grid)`
   position: absolute;
+  background-color: #4682b4;
 `;
 
 export default ProjectsContainer;

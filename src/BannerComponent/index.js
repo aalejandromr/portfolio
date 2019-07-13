@@ -36,7 +36,6 @@ const Banner = props => {
 
 const StyledGrid = styled(Grid)`
   position: absolute;
-
   background-color: ${props =>
     props.reversed !== "computer" ? "#e1e9ee" : "#CD776A"};
   height: 100vh;

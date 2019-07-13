@@ -28,12 +28,22 @@ body,
 .fadeTranslate-enter-active {
   /* transform: translateX(0%); */
   /* transition: all 4s ease-in-out; */
+  position: absolute;
   animation: slide-in 1.5s ease-out;
   -webkit-animation: slide-in 1.5s ease-out;
 }
 
+/* .fadeTranslate-exit {
+  margin-top: 40%;
+} */
+
+.fadeTranslate-exit.ui.grid {
+  margin-top: 0 !important;
+}
+
 .fadeTranslate-exit.fadeTranslate-exit-active {
   /* transition: all 4s ease-in-out; */
+  position: absolute;
   animation: slide-out 1.5s ease-out;
   -webkit-animation: slide-out 1.5s ease-out;
 }
