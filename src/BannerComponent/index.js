@@ -42,7 +42,7 @@ const StyledGrid = styled(Grid)`
   &&& {
     padding: 5%;
     @media (min-width: 200px) and (max-width: 1100px) {
-      /* height: auto; */
+      height: auto;
     }
   }
 `;

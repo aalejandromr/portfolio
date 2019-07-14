@@ -12,7 +12,7 @@ const Project = ({ projectName, projectUrl, imgPath }) => {
       textAlign="center"
       verticalAlign="middle"
     >
-      <Image.Group size={"big"}>
+      <Image.Group>
         <StyledImage src={`${imgPath}`} rounded centered fluid />
       </Image.Group>
 
@@ -38,6 +38,14 @@ const StyledGridColumn = styled(Grid.Column)`
   & {
     padding: 5%;
     box-sizing: border-box;
+  }
+  @media (min-width: 375px) and (max-width: 700px) {
+    /* margin-bottom: 10%;
+    background-position: 0% 120%;
+    z-index: 100; */
+    &&&&& {
+      padding: 10%;
+    }
   }
 `;
 

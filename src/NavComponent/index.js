@@ -9,8 +9,8 @@ const Nav = props => {
         <StyledNav>
           <StyledAnchor to="/">←</StyledAnchor>
           <StyledAnchor to="/projects">Projects</StyledAnchor>
-          <StyledAnchor to="/education">Education</StyledAnchor>
-          <StyledAnchor to="/working-with-me">Testimonials</StyledAnchor>
+          {/* <StyledAnchor to="/education">Education</StyledAnchor>
+          <StyledAnchor to="/working-with-me">Testimonials</StyledAnchor> */}
         </StyledNav>
       </Wrapper>
     </Container>
